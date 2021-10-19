@@ -1,0 +1,2 @@
+insert into users(name,email,password,create_date,last_login,isactive,tokend) values ('Prueba','sincorreo@sincorreo.com','12345678',SYSDATE,SYSDATE,1,'38031bf0-7b4f-4279-8939-b395ddb12583');
+insert into phone(number,citycode,contrycode,id_user) values ('123456789','11','12',select id_user from users where name = 'Prueba' );
